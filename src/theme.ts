@@ -1,4 +1,4 @@
-import {createTheme} from "@mantine/core";
+import {createTheme, CSSVariablesResolver} from "@mantine/core";
 
 export const theme = createTheme({
     fontFamily: 'Inter, sans-serif',
@@ -17,3 +17,16 @@ export const theme = createTheme({
     },
     defaultRadius: '8px',
 });
+
+export const resolver: CSSVariablesResolver = (theme) => ({
+    variables: {
+        '--mantine-color-purple-100': theme.colors.purple[0],
+        '--mantine-color-purple-200': theme.colors.purple[1],
+        '--mantine-color-purple-300': theme.colors.purple[2],
+        '--mantine-color-purple-400': theme.colors.purple[3],
+        '--mantine-color-purple-500': theme.colors.purple[4],
+        '--mantine-color-purple-600': theme.colors.purple[5],
+    },
+    dark: {},
+    light: {}
+})

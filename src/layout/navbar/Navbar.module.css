@@ -1,0 +1,22 @@
+.item:has(a.active) {
+
+}
+
+.active {
+    font-weight: 700;
+    color: var(--mantine-color-purple-500);
+    background-color: var(--mantine-color-purple-200);
+}
+
+.item {
+
+}
+
+a {
+    text-decoration: none;
+    max-width: 232px;
+    height: 42px;
+    padding: 10px;
+    border-radius: var(--mantine-radius-default);
+    color: var(--mantine-color-black);
+}
