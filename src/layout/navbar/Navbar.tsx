@@ -23,8 +23,10 @@ export const Navbar = () => {
         <Space h="80px"/>
         <Stack gap={"16px"}>
             {navbarItems.map((item, index) =>
-                <NavLink key={index} to={item.link}
-                         className={({isActive}) => isActive ? c.active : ""}>{item.title}</NavLink>
+                <div className={c.item}>
+                    <NavLink key={index} to={item.link}
+                              className={({isActive}) => isActive ? c.active : ""}>{item.title}</NavLink>
+                </div>
             )}
         </Stack>
 

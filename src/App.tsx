@@ -26,7 +26,7 @@ export default function App() {
             <Navbar/>
         </AppShell.Navbar>
         <AppShell.Main>
-            <Container p={"40px 90px"}>
+            <Container p={"40px 90px"} size={"xl"}>
                 <Outlet/>
             </Container>
         </AppShell.Main>
