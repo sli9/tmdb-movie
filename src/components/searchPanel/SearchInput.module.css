@@ -1,0 +1,32 @@
+.input {
+    width: 283px;
+    min-height: 42px;
+    align-content: center;
+    border: 1px solid var(--mantine-color-grey-300);
+}
+
+.section {
+    color: var(--mantine-color-grey-500);
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.control {
+    border: none;
+    color: var(--mantine-color-grey-500);
+    padding-right: 8px;
+}
+
+.ratings {
+    width: 283px;
+}
+
+.ratings > div input {
+    min-height: 42px;
+}
